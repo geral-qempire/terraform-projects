@@ -1,0 +1,10 @@
+environments:
+  tango-dev:
+    name: "tango-dev"
+    projectName: "Tango"
+    templateName: "omni_stack_v2"   # your workflow template
+    continuousDeployment: true
+    pullRequestPlanDeployments: true
+    vcsPrCommentsEnabled: true
+    variableFiles:
+      - path: projects/tango/dev/terraform.tfvars

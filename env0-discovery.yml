@@ -1,7 +1,7 @@
 environments:
   tango-dev:
     name: "tango-dev"
-    projectName: "tango"
+    projectName: "Tango"
     templateName: "omni_stack_v1"   # your workflow template
     continuousDeployment: true
     pullRequestPlanDeployments: true

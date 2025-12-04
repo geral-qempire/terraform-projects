@@ -1,10 +1,4 @@
 environments:
   resource_group:
     name: 'Resource Group Stack'
-    
-    vcs:
-      type: 'opentofu'
-      opentofuVersion: '1.10.7'
-      repository: 'https://github.com/geral-qempire/terraform-stacks'
-      path: '.'
-      revision: 'stacks/resource_group_stack/v1.0.2'
+    templateName: 'omni_stack_v2_1.0.3'

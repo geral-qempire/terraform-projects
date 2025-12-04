@@ -2,7 +2,6 @@
 # Core context
 ############################################################
 
-project_name        = "omni"
 environment         = "qua"         # TODO: dev/qua/prd short code
 location            = "northeurope" # TODO: Azure region
 name_random_postfix = false

@@ -2,7 +2,7 @@
 # Core context
 ############################################################
 
-project_name        = "tango"
+project_name        = "mambo"
 environment         = "dev"         # TODO: dev/qua/prd short code
 location            = "northeurope" # TODO: Azure region
 name_random_postfix = false
@@ -15,8 +15,8 @@ infra_subscription_id = "2a4f4e29-3789-4e47-867d-62a6eb17950b" # TODO: subscript
 
 cost_center      = "DA - 100"    # TODO: cost center tag
 business_unit    = "DA - 110"   # TODO: business unit tag
-application_name = "tango" # TODO: application name tag
-application_code = "TNG"       # TODO: application code tag
+application_name = "mambo" # TODO: application name tag
+application_code = "MBO"       # TODO: application code tag
 additional_tags  = {}
 
 ############################################################

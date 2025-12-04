@@ -1,7 +1,6 @@
 environments:
   resource_group:
     name: 'Resource Group Stack'
-    
     vcs:
       type: 'opentofu'
       opentofuVersion: '1.10.7'

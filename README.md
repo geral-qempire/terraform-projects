@@ -33,14 +33,13 @@ Each environment directory should contain:
 - `outputs.tf` - Output values
 - `backend.tf` - Backend configuration for state storage
 - `versions.tf` - Provider and Terraform version constraints
-- `terraform.tfvars` - Environment-specific variable values (excluded from releases)
+- `terraform.tfvars` - Environment-specific variable values
 
 ## Tagged Versions
 
 When a project is tagged (e.g., `projects/mambo/dev/v1.0.0`), the `techpivot/terraform-module-releaser@v1` action places the project's files in the root of the tag.
 
-**Excluded from tagged releases:**
-- `*terraform.tfvars` files (as configured in the workflow)
+**All files are included in tagged releases**, including `terraform.tfvars` files.
 
 **Example tag structure:**
 ```
@@ -49,7 +48,6 @@ projects/mambo/dev/v1.0.0/
 ├── variables.tf
 ├── outputs.tf
 ├── backend.tf
-└── versions.tf
+├── versions.tf
+└── terraform.tfvars
 ```
-
-The `terraform.tfvars` file is not included in the release.

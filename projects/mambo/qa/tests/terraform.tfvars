@@ -3,7 +3,7 @@
 ############################################################
 
 project_name        = "mambo"
-environment         = "dev-stg"         # TODO: dev/qua/prd short code
+environment         = "qa-stg"         # TODO: dev/qua/prd short code
 location            = "northeurope" # TODO: Azure region
 name_random_postfix = false
 

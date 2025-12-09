@@ -3,7 +3,7 @@
 ############################################################
 
 project_name        = "zango"
-environment         = "dev"         # TODO: dev/qua/prd short code
+environment         = "devs"         # TODO: dev/qua/prd short code
 location            = "northeurope" # TODO: Azure region
 name_random_postfix = false
 

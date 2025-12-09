@@ -20,7 +20,7 @@ jobs:
       - name: Terraform Module Releaser
         uses: techpivot/terraform-module-releaser@v1
         with:
-          module-path-ignore: "projects/*/tests,projects/*/tests/**"
+          module-path-ignore: "projects/*/*/tests,projects/*/*/tests/**"
         # Optional customisation:
         # with:
         #   default-first-tag: "v1.0.0"

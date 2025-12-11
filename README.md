@@ -13,10 +13,10 @@ terraform-projects/
 │   └── <project_name>/
 │       └── <environment>/
 │           ├── backend.tf             # Backend configuration for real environment
-│           ├── backend-stage.hcl       # Backend override for staging environment deployments
+│           ├── backend-stage.hcl      # Backend override for staging environment deployments
 │           ├── main.tf                # Main Terraform configuration
-│           ├── outputs.tf              # Output definitions
-│           ├── providers.tf          # Provider configurations
+│           ├── outputs.tf             # Output definitions
+│           ├── providers.tf           # Provider configurations
 │           ├── terraform.tfvars       # Variable values
 │           ├── variables.tf           # Variable definitions
 │           └── versions.tf            # Terraform and provider versions

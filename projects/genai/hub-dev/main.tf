@@ -11,8 +11,11 @@ module "genai_hub" {
   enable_ai_search        = var.enable_ai_search
   enable_sql_database     = var.enable_sql_database
 
-  outbound_fqdn_rules   = var.outbound_fqdn_rules
+  outbound_fqdn_rules       = var.outbound_fqdn_rules
   sql_azuread_administrator = var.sql_azuread_administrator
+
+  reader_group_ids      = var.reader_group_ids
+  contributor_group_ids = var.contributor_group_ids
 
   tags = var.tags
 }

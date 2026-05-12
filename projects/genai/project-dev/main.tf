@@ -6,6 +6,7 @@ module "genai_project" {
   location         = var.location
   hub_workspace_id = var.hub_workspace_id
   tier             = var.tier
+  network_security = var.network_security
 
   enable_storage          = var.enable_storage
   enable_storage_datalake = var.enable_storage_datalake

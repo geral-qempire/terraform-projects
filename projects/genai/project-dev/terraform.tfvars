@@ -17,7 +17,8 @@ hub_workspace_id = "/subscriptions/cb084404-ffbb-4bca-8a99-272625f6008a/resource
 # Tier
 ########################################
 
-tier = "poc_dev"
+tier             = "poc_dev"
+network_security = "inbound_outbound_safe"
 
 ########################################
 # Optional resources

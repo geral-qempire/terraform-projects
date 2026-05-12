@@ -41,6 +41,16 @@ variable "tier" {
 }
 
 ########################################
+# Network security
+########################################
+
+variable "network_security" {
+  description = "Network security posture (must match hub setting)."
+  type        = string
+  default     = "public"
+}
+
+########################################
 # Optional resource toggles
 ########################################
 

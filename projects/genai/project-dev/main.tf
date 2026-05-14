@@ -11,6 +11,7 @@ module "genai_project" {
   enable_storage          = var.enable_storage
   enable_storage_datalake = var.enable_storage_datalake
   enable_keyvault         = var.enable_keyvault
+  enable_ai_services      = var.enable_ai_services
   enable_ai_search        = var.enable_ai_search
   enable_sql_database     = var.enable_sql_database
 

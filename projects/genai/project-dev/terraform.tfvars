@@ -27,6 +27,7 @@ network_security = "inbound_outbound_safe"
 enable_storage          = true
 enable_storage_datalake = true
 enable_keyvault         = true
+enable_ai_services      = true
 enable_ai_search        = true
 enable_sql_database     = false
 

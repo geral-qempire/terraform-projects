@@ -59,6 +59,16 @@ variable "enable_sql_database" {
 }
 
 ########################################
+# AI Services
+########################################
+
+variable "ai_services_name" {
+  description = "Name override for the AI Services account. If empty, auto-generated."
+  type        = string
+  default     = ""
+}
+
+########################################
 # Outbound rules
 ########################################
 

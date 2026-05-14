@@ -18,6 +18,8 @@ network_security = "inbound_outbound_safe"
 # Optional resources
 ########################################
 
+ai_services_name        = "cog-genai-dev-swc"
+
 enable_storage_datalake = true
 enable_ai_search        = true
 enable_sql_database     = false

@@ -99,6 +99,52 @@ variable "contributor_group_ids" {
 }
 
 ########################################
+# Private endpoint networking
+########################################
+
+variable "vnet_id" {
+  description = "Existing VNet ID. If null, a new VNet is created when network_security != public."
+  type        = string
+  default     = null
+}
+
+variable "subnet_id" {
+  description = "Existing subnet ID for private endpoints. If null, a new subnet is created."
+  type        = string
+  default     = null
+}
+
+variable "vnet_address_space" {
+  description = "Address space for auto-created VNet."
+  type        = list(string)
+  default     = ["10.0.0.0/16"]
+}
+
+variable "subnet_address_prefixes" {
+  description = "Address prefixes for auto-created PE subnet."
+  type        = list(string)
+  default     = ["10.0.1.0/24"]
+}
+
+variable "private_dns_zone_ids" {
+  description = "Map of subresource type to existing Private DNS Zone ID."
+  type        = map(string)
+  default     = {}
+}
+
+variable "storage_pe_subresources" {
+  description = "PE sub-resources for the main storage account."
+  type        = list(string)
+  default     = ["blob"]
+}
+
+variable "storage_datalake_pe_subresources" {
+  description = "PE sub-resources for the Data Lake storage account."
+  type        = list(string)
+  default     = ["blob", "dfs"]
+}
+
+########################################
 # Tagging
 ########################################
 

@@ -17,5 +17,13 @@ module "genai_hub" {
   reader_group_ids      = var.reader_group_ids
   contributor_group_ids = var.contributor_group_ids
 
+  vnet_id                         = var.vnet_id
+  subnet_id                       = var.subnet_id
+  vnet_address_space              = var.vnet_address_space
+  subnet_address_prefixes         = var.subnet_address_prefixes
+  private_dns_zone_ids            = var.private_dns_zone_ids
+  storage_pe_subresources         = var.storage_pe_subresources
+  storage_datalake_pe_subresources = var.storage_datalake_pe_subresources
+
   tags = var.tags
 }

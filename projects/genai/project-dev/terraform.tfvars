@@ -31,6 +31,16 @@ enable_ai_search        = true
 enable_sql_database     = false
 
 ########################################
+# Private endpoint networking
+########################################
+
+vnet_address_space      = ["10.101.0.0/16"]
+subnet_address_prefixes = ["10.101.1.0/24"]
+
+storage_pe_subresources          = ["blob", "file"]
+storage_datalake_pe_subresources = ["blob", "dfs"]
+
+########################################
 # RBAC profiles
 ########################################
 

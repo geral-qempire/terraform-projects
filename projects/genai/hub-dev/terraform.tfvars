@@ -2,7 +2,7 @@
 # Core context
 ########################################
 
-subscription_id = "cb084404-ffbb-4bca-8a99-272625f6008a" # TODO: set your Azure subscription ID
+subscription_id = "cb084404-ffbb-4bca-8a99-272625f6008a"
 project_name    = "genai"
 environment     = "dev"
 location        = "swedencentral"
@@ -18,9 +18,19 @@ network_security = "inbound_outbound_safe"
 # Optional resources
 ########################################
 
-enable_storage_datalake = false
-enable_ai_search        = false
+enable_storage_datalake = true
+enable_ai_search        = true
 enable_sql_database     = false
+
+########################################
+# Private endpoint networking
+########################################
+
+vnet_address_space      = ["10.100.0.0/16"]
+subnet_address_prefixes = ["10.100.1.0/24"]
+
+storage_pe_subresources         = ["blob", "file"]
+storage_datalake_pe_subresources = ["blob", "dfs"]
 
 ########################################
 # Outbound FQDN rules (inbound_outbound_safe only)
